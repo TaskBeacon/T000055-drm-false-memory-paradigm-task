@@ -1,0 +1,228 @@
+{
+  "task_plot_spec": {
+    "spec_version": "0.2",
+    "meta": {
+      "task_name": "DRM False Memory Paradigm",
+      "mode": "existing",
+      "task_id": ""
+    },
+    "figure": {
+      "output": {
+        "filename": "task_flow.png",
+        "dpi": 300,
+        "width_in": 16.0,
+        "background": "white"
+      },
+      "layout": {
+        "max_conditions": 6,
+        "screens_per_timeline": 7,
+        "screen_overlap_ratio": 0.1,
+        "screen_slope": 0.08,
+        "screen_slope_deg": 25.0,
+        "timeline_gap": 0.18,
+        "screen_aspect_ratio": 1.4545454545454546,
+        "left_margin": 0.2,
+        "right_margin": 0.08,
+        "top_margin": 0.03,
+        "bottom_margin": 0.05,
+        "condition_label_gap": 0.014,
+        "phase_label_pad": 0.01,
+        "duration_label_gap": 0.006,
+        "timeline_arrow_gap": 0.01,
+        "timeline_arrow_screen_clearance": 0.007,
+        "timeline_arrow_text_clearance": 0.01,
+        "timeline_arrow_extra_per_screen": 0.015,
+        "timeline_arrow_min_y": 0.02,
+        "timeline_arrow_max_y": 0.96
+      }
+    },
+    "timelines": [
+      {
+        "condition": "bread",
+        "display_condition_label": "Bread",
+        "phases": [
+          {
+            "phase_name": "block intro",
+            "display_phase_label": "Block Intro",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "list_intro_text"
+            ],
+            "stimulus_example": {
+              "summary": "… Study the words in this list. A recognition…",
+              "modality": "visual",
+              "draw_hint": "text",
+              "render_items": [
+                {
+                  "kind": "text",
+                  "text": "…\n\nStudy the words in this list.\nA recognition test will follow immediately.\n\nPress Space to start.",
+                  "color": "black",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "height": 28.0
+                }
+              ]
+            },
+            "notes": ""
+          },
+          {
+            "phase_name": "study word",
+            "display_phase_label": "Study Word",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "study_word_text"
+            ],
+            "stimulus_example": {
+              "summary": "…",
+              "modality": "visual",
+              "draw_hint": "text",
+              "render_items": [
+                {
+                  "kind": "text",
+                  "text": "…",
+                  "color": "black",
+                  "pos": [
+                    0.0,
+                    20.0
+                  ],
+                  "height": 42.0
+                }
+              ]
+            },
+            "notes": ""
+          },
+          {
+            "phase_name": "study gap",
+            "display_phase_label": "Study Gap",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "blank_screen"
+            ],
+            "stimulus_example": {
+              "summary": "Rectangle Rectangle",
+              "modality": "visual",
+              "draw_hint": "shape",
+              "render_items": [
+                {
+                  "kind": "shape",
+                  "shape": "rect",
+                  "label": "Rectangle Rectangle",
+                  "color": "white",
+                  "line_color": "white",
+                  "line_width": 1.0,
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "size": null
+                }
+              ]
+            },
+            "notes": ""
+          },
+          {
+            "phase_name": "recognition instructions",
+            "display_phase_label": "Recognition Instruc…",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "recognition_intro_text"
+            ],
+            "stimulus_example": {
+              "summary": "Recognition test Use the confidence scale bel…",
+              "modality": "visual",
+              "draw_hint": "text",
+              "render_items": [
+                {
+                  "kind": "text",
+                  "text": "Recognition test\n\nUse the confidence scale below for each word.\n1 = sure new, 2 = probably new, 3 = probably old, 4 = sure old\n\nPress Space to begin.",
+                  "color": "black",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "height": 28.0
+                }
+              ]
+            },
+            "notes": ""
+          },
+          {
+            "phase_name": "recognition item",
+            "display_phase_label": "Recognition Item",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "recognition_word_text"
+            ],
+            "stimulus_example": {
+              "summary": "…",
+              "modality": "visual",
+              "draw_hint": "text",
+              "render_items": [
+                {
+                  "kind": "text",
+                  "text": "…",
+                  "color": "black",
+                  "pos": [
+                    0.0,
+                    40.0
+                  ],
+                  "height": 44.0
+                }
+              ]
+            },
+            "notes": ""
+          },
+          {
+            "phase_name": "block summary",
+            "display_phase_label": "Block Summary",
+            "duration_ms": null,
+            "response_window_ms": null,
+            "display_timing_label": "",
+            "stim_ids": [
+              "block_summary_text"
+            ],
+            "stimulus_example": {
+              "summary": "… Studied-item old rate: … Critical-lure old …",
+              "modality": "visual",
+              "draw_hint": "text",
+              "render_items": [
+                {
+                  "kind": "text",
+                  "text": "…\n\nStudied-item old rate: …\nCritical-lure old rate: …\nFoil old rate: …\nMean confidence: …\nTimeouts: …\n\nPress Space to continue.",
+                  "color": "black",
+                  "pos": [
+                    0.0,
+                    0.0
+                  ],
+                  "height": 26.0
+                }
+              ]
+            },
+            "notes": ""
+          }
+        ],
+        "condition_variants": [
+          "cold",
+          "doctor",
+          "fruit",
+          "sleep",
+          "sweet"
+        ],
+        "display_condition_note": "Also: Cold, Doctor, Fruit, Sleep, Sweet"
+      }
+    ],
+    "legend": []
+  }
+}

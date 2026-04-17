@@ -1,0 +1,235 @@
+task_id: T000055
+generated_at: '2026-04-17T02:13:04Z'
+selection_policy: tiered_mix_high_impact_plus_high_citation_open_access
+citation_threshold: 100
+papers:
+- id: W2116104551
+  title: Suppression of false recognition in Alzheimer’s disease and in patients with
+    frontal lobe lesions
+  authors:
+  - Andrew E. Budson
+  - Alison L. Sullivan
+  - E. Mayer
+  - Kirk R. Daffner
+  - Peter McL. Black
+  - Daniel L. Schacter
+  year: 2002
+  journal: Brain
+  doi_or_url: https://doi.org/10.1093/brain/awf277
+  citation_count: 139
+  is_high_impact: true
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2134938246
+  title: Neurodevelopmental Correlates of True and False Recognition
+  authors:
+  - Pedro M. Paz‐Alonso
+  - Simona Ghetti
+  - Sarah E. Donohue
+  - Gail S. Goodman
+  - Silvia A. Bunge
+  year: 2008
+  journal: Cerebral Cortex
+  doi_or_url: https://doi.org/10.1093/cercor/bhm246
+  citation_count: 118
+  is_high_impact: true
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2123135030
+  title: 'Factors that determine false recall: A multiple regression analysis'
+  authors:
+  - Henry L. Roediger
+  - Jason M. Watson
+  - Kathleen B. McDermott
+  - David A. Gallo
+  year: 2001
+  journal: Psychonomic Bulletin & Review
+  doi_or_url: https://doi.org/10.3758/bf03196177
+  citation_count: 856
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2050206549
+  title: Explorations in the social contagion of memory
+  authors:
+  - Michelle L. Meade
+  - Henry L. Roediger
+  year: 2002
+  journal: Memory & Cognition
+  doi_or_url: https://doi.org/10.3758/bf03194318
+  citation_count: 375
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W1975165999
+  title: In defense of the signal detection interpretation of remember/know judgments
+  authors:
+  - John T. Wixted
+  - Vincent Stretch
+  year: 2004
+  journal: Psychonomic Bulletin & Review
+  doi_or_url: https://doi.org/10.3758/bf03196616
+  citation_count: 356
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2167688842
+  title: 'False recall and false recognition induced by presentation of associated
+    words: Effects of retention interval and level of processing'
+  authors:
+  - Anjali Thapar
+  - Kathleen B. McDermott
+  year: 2001
+  journal: Memory & Cognition
+  doi_or_url: https://doi.org/10.3758/bf03196393
+  citation_count: 222
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2171699477
+  title: Associative false recognition occurs without strategic criterion shifts
+  authors:
+  - David A. Gallo
+  - Henry L. Roediger
+  - Kathleen B. McDermott
+  year: 2001
+  journal: Psychonomic Bulletin & Review
+  doi_or_url: https://doi.org/10.3758/bf03196194
+  citation_count: 203
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2076227445
+  title: 'Trusting Our Memories: Dissociating the Neural Correlates of Confidence
+    in Veridical versus Illusory Memories'
+  authors:
+  - Hongkeun Kim
+  - Roberto Cabeza
+  year: 2007
+  journal: Journal of Neuroscience
+  doi_or_url: https://doi.org/10.1523/jneurosci.3408-07.2007
+  citation_count: 173
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2063649043
+  title: The effect of warnings on false memories in young and older adults
+  authors:
+  - David P. McCabe
+  - Anderson D. Smith
+  year: 2002
+  journal: Memory & Cognition
+  doi_or_url: https://doi.org/10.3758/bf03194324
+  citation_count: 161
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2010201088
+  title: 'Competitive Trace Theory: A Role for the Hippocampus in Contextual Interference
+    during Retrieval'
+  authors:
+  - Michael A. Yassa
+  - Zachariah M. Reagh
+  year: 2013
+  journal: Frontiers in Behavioral Neuroscience
+  doi_or_url: https://doi.org/10.3389/fnbeh.2013.00107
+  citation_count: 117
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2008920608
+  title: Sleep Loss Produces False Memories
+  authors:
+  - Susanne Diekelmann
+  - Hans‐Peter Landolt
+  - Olaf Lahl
+  - Jan Born
+  - Ullrich Wagner
+  year: 2008
+  journal: PLoS ONE
+  doi_or_url: https://doi.org/10.1371/journal.pone.0003512
+  citation_count: 104
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2467015826
+  title: 'The Survival Advantage: Underlying Mechanisms and Extant Limitations'
+  authors:
+  - Stephanie A. Kazanas
+  - Jeanette Altarriba
+  year: 2015
+  journal: Evolutionary Psychology
+  doi_or_url: https://doi.org/10.1177/147470491501300204
+  citation_count: 103
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''
+- id: W2154025134
+  title: 'False Memory ≠ False Memory: DRM Errors Are Unrelated to the Misinformation
+    Effect'
+  authors:
+  - James Ost
+  - Hartmut Blank
+  - Joanna M. Davies
+  - Georgina Jones
+  - Katie Lambert
+  - Kelly Salmon
+  year: 2013
+  journal: PLoS ONE
+  doi_or_url: https://doi.org/10.1371/journal.pone.0057939
+  citation_count: 101
+  is_high_impact: false
+  open_access: true
+  used_for:
+  - task_workflow
+  - timing_parameters
+  parameter_bindings: {}
+  notes: ''

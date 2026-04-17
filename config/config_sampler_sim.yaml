@@ -1,0 +1,405 @@
+subinfo_fields:
+  - name: subject_id
+    type: int
+    constraints:
+      min: 101
+      max: 999
+      digits: 3
+
+subinfo_mapping:
+  subject_id: Subject ID (3 digits)
+  Participant Information: Participant Information
+  registration_failed: Registration failed
+  registration_successful: Registration successful
+  invalid_input: '{field} is invalid'
+
+window:
+  size: [1280, 720]
+  units: pix
+  screen: 0
+  bg_color: white
+  fullscreen: false
+  monitor_width_cm: 35.5
+  monitor_distance_cm: 60
+
+task:
+  task_name: drm_false_memory_paradigm
+  save_path: ./outputs/sim_sampler
+  language: English
+  voice_name: en-US-AriaNeural
+  voice_enabled: false
+  seed_mode: same_across_sub
+  overall_seed: 55055
+  block_seed:
+    - 55055
+    - 55056
+  total_blocks: 2
+  total_trials: 2
+  trial_per_block: 1
+  conditions:
+    - bread
+    - cold
+  continue_key: space
+  key_list:
+    - space
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+  recognition_keys:
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+  study_word_count: 10
+  recognition_positions:
+    - 1
+    - 3
+    - 5
+    - 7
+    - 9
+  recognition_item_count: 10
+  foil_count: 4
+  cognitive_domain:
+    - memory
+    - episodic_memory
+    - false_memory
+  variant: baseline
+  delta: 0.0
+  list_bank:
+    bread:
+      critical_lure: bread
+      study_words:
+        - butter
+        - food
+        - eat
+        - sandwich
+        - rye
+        - jam
+        - milk
+        - flour
+        - jelly
+        - dough
+    cold:
+      critical_lure: cold
+      study_words:
+        - hot
+        - snow
+        - warm
+        - winter
+        - ice
+        - wet
+        - frigid
+        - chilly
+        - heat
+        - weather
+    doctor:
+      critical_lure: doctor
+      study_words:
+        - nurse
+        - sick
+        - lawyer
+        - medicine
+        - health
+        - hospital
+        - dentist
+        - physician
+        - ill
+        - patient
+    fruit:
+      critical_lure: fruit
+      study_words:
+        - apple
+        - vegetable
+        - orange
+        - kiwi
+        - citrus
+        - ripe
+        - pear
+        - banana
+        - berry
+        - cherry
+    sleep:
+      critical_lure: sleep
+      study_words:
+        - bed
+        - rest
+        - awake
+        - tired
+        - dream
+        - wake
+        - snooze
+        - blanket
+        - doze
+        - slumber
+    sweet:
+      critical_lure: sweet
+      study_words:
+        - sour
+        - candy
+        - sugar
+        - bitter
+        - good
+        - taste
+        - tooth
+        - nice
+        - honey
+        - soda
+  foil_pool:
+    - anchor
+    - bicycle
+    - candle
+    - camera
+    - carpet
+    - guitar
+    - hammer
+    - jacket
+    - lantern
+    - marble
+    - notebook
+    - pillow
+    - rocket
+    - shovel
+    - suitcase
+    - teapot
+    - wallet
+    - window
+    - zipper
+    - basket
+    - ladder
+    - mushroom
+    - umbrella
+    - watch
+
+timing:
+  study_word_duration_s: 1.25
+  study_isi_s: 0.35
+  recognition_response_window_s: 2.0
+  recognition_feedback_duration_s: 0.35
+  block_summary_hold_s: 0.5
+  post_list_gap_s: 0.5
+  summary_hold_s: 0.5
+
+stimuli:
+  instruction_text:
+    type: text
+    font: Arial
+    text: |-
+      In this task you will study several short word lists.
+      After each list, you will rate whether test words were on that list.
+
+      For the recognition test, use the confidence scale:
+      1 = sure new
+      2 = probably new
+      3 = probably old
+      4 = sure old
+
+      Study each word carefully.
+      Press Space to begin.
+    color: black
+    height: 28
+    wrapWidth: 1040
+    pos: [0, 0]
+  list_intro_text:
+    type: text
+    font: Arial
+    text: |-
+      {list_label}
+
+      Study the words in this list.
+      A recognition test will follow immediately.
+
+      Press Space to start.
+    color: black
+    height: 28
+    wrapWidth: 1040
+    pos: [0, 0]
+  fixation:
+    type: text
+    font: Arial
+    text: "+"
+    color: black
+    height: 48
+    pos: [0, 0]
+  blank_screen:
+    type: rect
+    width: 2000
+    height: 2000
+    pos: [0, 0]
+    fillColor: white
+    lineColor: white
+    lineWidth: 0
+  study_word_text:
+    type: text
+    font: Arial
+    text: "{word}"
+    color: black
+    height: 42
+    wrapWidth: 960
+    pos: [0, 20]
+  study_hint_text:
+    type: text
+    font: Arial
+    text: "Remember the words in this list."
+    color: black
+    height: 24
+    wrapWidth: 960
+    pos: [0, -150]
+  recognition_intro_text:
+    type: text
+    font: Arial
+    text: |-
+      Recognition test
+
+      Use the confidence scale below for each word.
+      1 = sure new, 2 = probably new, 3 = probably old, 4 = sure old
+
+      Press Space to begin.
+    color: black
+    height: 28
+    wrapWidth: 1040
+    pos: [0, 0]
+  recognition_word_text:
+    type: text
+    font: Arial
+    text: "{word}"
+    color: black
+    height: 44
+    wrapWidth: 960
+    pos: [0, 40]
+  recognition_prompt_text:
+    type: text
+    font: Arial
+    text: "How sure are you that this word was on the list?"
+    color: black
+    height: 24
+    wrapWidth: 960
+    pos: [0, -170]
+  recognition_scale_1:
+    type: text
+    font: Arial
+    text: "1  Sure new"
+    color: black
+    height: 22
+    wrapWidth: 180
+    pos: [-360, -225]
+  recognition_scale_2:
+    type: text
+    font: Arial
+    text: "2  Probably new"
+    color: black
+    height: 22
+    wrapWidth: 180
+    pos: [-120, -225]
+  recognition_scale_3:
+    type: text
+    font: Arial
+    text: "3  Probably old"
+    color: black
+    height: 22
+    wrapWidth: 180
+    pos: [120, -225]
+  recognition_scale_4:
+    type: text
+    font: Arial
+    text: "4  Sure old"
+    color: black
+    height: 22
+    wrapWidth: 180
+    pos: [360, -225]
+  block_summary_text:
+    type: text
+    font: Arial
+    text: |-
+      {list_label}
+
+      Studied-item old rate: {studied_old_rate}
+      Critical-lure old rate: {lure_old_rate}
+      Foil old rate: {foil_old_rate}
+      Mean confidence: {mean_confidence}
+      Timeouts: {total_timeouts}
+
+      Press Space to continue.
+    color: black
+    height: 26
+    wrapWidth: 960
+    pos: [0, 0]
+  good_bye_text:
+    type: text
+    font: Arial
+    text: |-
+      Task complete
+
+      Overall studied-item old rate: {studied_old_rate}
+      Overall critical-lure old rate: {lure_old_rate}
+      Overall foil old rate: {foil_old_rate}
+      Mean confidence: {mean_confidence}
+      Total timeouts: {total_timeouts}
+      Total time: {total_elapsed_min}
+
+      Press Space to exit.
+    color: black
+    height: 26
+    wrapWidth: 960
+    pos: [0, 0]
+
+triggers:
+  map:
+    exp_onset: 1
+    exp_end: 2
+    block_onset: 10
+    block_end: 11
+    study_instructions_onset: 12
+    study_word_onset: 20
+    study_gap_onset: 21
+    recognition_instructions_onset: 30
+    recognition_item_onset: 40
+    block_summary_onset: 50
+    good_bye_onset: 60
+    response_1: 111
+    response_2: 112
+    response_3: 113
+    response_4: 114
+    response_timeout: 199
+  driver:
+    type: serial_url
+    url: loop://
+    baudrate: 115200
+    timeout: 1
+    prefix: [1, 225, 1, 0]
+  policy:
+    strict: false
+  timing:
+    post_delay_s: 0.001
+
+task_plot:
+  screens_per_timeline: 10
+  right_margin: 0.08
+
+sim:
+  output_dir: outputs/sim_sampler
+  seed: 55055
+  participant_id: sim001
+  session_id: sub-sim001_task-drm_false_memory_paradigm_seed55055_sampler
+  log_path: outputs/sim_sampler/sub-sim001_task-drm_false_memory_paradigm_seed55055_sampler_sim_events.jsonl
+  policy: warn
+  default_rt_s: 0.2
+  clamp_rt: false
+  responder:
+    type: responders.task_sampler:TaskSamplerResponder
+    kwargs:
+      key: null
+      continue_key: space
+      continue_rt_s: 0.35
+      studied_old_rate: 0.72
+      lure_old_rate: 0.88
+      foil_old_rate: 0.20
+      timeout_rate: 0.03
+      rt_mean_s: 0.82
+      rt_sd_s: 0.20
+      rt_min_s: 0.18
+      studied_rt_offset_s: -0.04
+      lure_rt_offset_s: 0.06
+      foil_rt_offset_s: -0.06
+      old_confidence_bias: 0.58
+      new_confidence_bias: 0.62
